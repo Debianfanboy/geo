@@ -14,7 +14,7 @@ def get_vector():
         except:
             print("Invalid input")
         break
-    ret = xval. yval
+    ret = xval, yval
     return ret
 def get_cords():
     ret = []
@@ -48,7 +48,7 @@ def flip(axis, points):
 def translate(vector, points):
     ret = []
     for i in range(len(points)):
-        nx = point[i][0] + vector[i][0]
+        nx = points[i][0] + vector[i][0]
         ny = point[i][1] + vector[i][1]
         coord = nx, ny
         ret.append(coord)
