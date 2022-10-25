@@ -49,7 +49,7 @@ def translate(vector, points):
     ret = []
     for i in range(len(points)):
         nx = points[i][0] + vector[i][0]
-        ny = point[i][1] + vector[i][1]
+        ny = points[i][1] + vector[i][1]
         coord = nx, ny
         ret.append(coord)
     return ret
